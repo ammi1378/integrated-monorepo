@@ -17,9 +17,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@guysenpai/is-even": ["packages/is-even/src/index.ts"],
-      "@guysenpai/is-odd": ["packages/is-odd/src/index.ts"],
-      "@guysenpai/nx-release": ["packages/nx-release/src/index.ts"]
+      "@ammi1378/is-even": ["packages/is-even/src/index.ts"],
+      "@ammi1378/is-odd": ["packages/is-odd/src/index.ts"],
+      "@ammi1378/nx-release": ["packages/nx-release/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

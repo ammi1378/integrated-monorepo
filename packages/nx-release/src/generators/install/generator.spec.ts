@@ -66,7 +66,7 @@ describe('install generator', () => {
       expect(projectJSON.targets).toEqual(
         expect.objectContaining({
           version: {
-            executor: '@guysenpai/nx-release:version',
+            executor: '@ammi1378/nx-release:version',
             options: expect.objectContaining({})
           }
         })
@@ -82,7 +82,7 @@ describe('install generator', () => {
       expect(projectJSON.targets).toEqual(
         expect.objectContaining({
           release: {
-            executor: '@guysenpai/nx-release:github',
+            executor: '@ammi1378/nx-release:github',
             options: expect.objectContaining({})
           }
         })
@@ -105,7 +105,7 @@ describe('install generator', () => {
       expect(lib1.targets).toEqual(
         expect.objectContaining({
           publish: {
-            executor: '@guysenpai/nx-release:npm',
+            executor: '@ammi1378/nx-release:npm',
             options: expect.objectContaining({})
           }
         })
@@ -114,7 +114,7 @@ describe('install generator', () => {
       expect(lib2.targets).toEqual(
         expect.objectContaining({
           publish: {
-            executor: '@guysenpai/nx-release:npm',
+            executor: '@ammi1378/nx-release:npm',
             options: expect.objectContaining({})
           }
         })
@@ -150,7 +150,7 @@ describe('install generator', () => {
       expect(lib1.targets).toEqual(
         expect.objectContaining({
           publish: {
-            executor: '@guysenpai/nx-release:npm',
+            executor: '@ammi1378/nx-release:npm',
             options: expect.objectContaining({})
           }
         })
@@ -159,7 +159,7 @@ describe('install generator', () => {
       expect(lib2.targets).toEqual(
         expect.objectContaining({
           publish: {
-            executor: '@guysenpai/nx-release:npm',
+            executor: '@ammi1378/nx-release:npm',
             options: expect.objectContaining({})
           }
         })
@@ -188,7 +188,7 @@ describe('install generator', () => {
       expect(lib1.targets).toEqual(
         expect.objectContaining({
           version: {
-            executor: '@guysenpai/nx-release:version'
+            executor: '@ammi1378/nx-release:version'
           }
         })
       );
@@ -206,7 +206,7 @@ describe('install generator', () => {
       expect(lib2.targets).toEqual(
         expect.objectContaining({
           version: {
-            executor: '@guysenpai/nx-release:version'
+            executor: '@ammi1378/nx-release:version'
           }
         })
       );
@@ -223,7 +223,7 @@ describe('install generator', () => {
       expect(lib1.targets).toEqual(
         expect.objectContaining({
           version: {
-            executor: '@guysenpai/nx-release:version',
+            executor: '@ammi1378/nx-release:version',
             options: expect.objectContaining({ baseBranch: 'master' })
           }
         })
@@ -231,7 +231,7 @@ describe('install generator', () => {
       expect(lib2.targets).toEqual(
         expect.objectContaining({
           version: {
-            executor: '@guysenpai/nx-release:version',
+            executor: '@ammi1378/nx-release:version',
             options: expect.objectContaining({ baseBranch: 'master' })
           }
         })
@@ -247,11 +247,11 @@ describe('install generator', () => {
       expect(lib1.targets).toEqual(
         expect.objectContaining({
           version: {
-            executor: '@guysenpai/nx-release:version',
+            executor: '@ammi1378/nx-release:version',
             options: expect.objectContaining({ postTargets: ['lib1:release'] })
           },
           release: {
-            executor: '@guysenpai/nx-release:gitlab',
+            executor: '@ammi1378/nx-release:gitlab',
             options: expect.objectContaining({})
           }
         })
@@ -259,11 +259,11 @@ describe('install generator', () => {
       expect(lib2.targets).toEqual(
         expect.objectContaining({
           version: {
-            executor: '@guysenpai/nx-release:version',
+            executor: '@ammi1378/nx-release:version',
             options: expect.objectContaining({ postTargets: ['lib2:release'] })
           },
           release: {
-            executor: '@guysenpai/nx-release:gitlab',
+            executor: '@ammi1378/nx-release:gitlab',
             options: expect.objectContaining({})
           }
         })
@@ -279,11 +279,11 @@ describe('install generator', () => {
       expect(lib1.targets).toEqual(
         expect.objectContaining({
           version: {
-            executor: '@guysenpai/nx-release:version',
+            executor: '@ammi1378/nx-release:version',
             options: expect.objectContaining({ postTargets: ['lib1:publish'] })
           },
           publish: {
-            executor: '@guysenpai/nx-release:npm',
+            executor: '@ammi1378/nx-release:npm',
             options: expect.objectContaining({})
           }
         })
@@ -291,11 +291,11 @@ describe('install generator', () => {
       expect(lib2.targets).toEqual(
         expect.objectContaining({
           version: {
-            executor: '@guysenpai/nx-release:version',
+            executor: '@ammi1378/nx-release:version',
             options: expect.objectContaining({ postTargets: ['lib2:publish'] })
           },
           publish: {
-            executor: '@guysenpai/nx-release:npm',
+            executor: '@ammi1378/nx-release:npm',
             options: expect.objectContaining({})
           }
         })
@@ -324,11 +324,11 @@ describe('install generator', () => {
       expect(lib1.targets).toEqual(
         expect.objectContaining({
           version: {
-            executor: '@guysenpai/nx-release:version',
+            executor: '@ammi1378/nx-release:version',
             options: expect.objectContaining({ postTargets: ['lib1:publish'] })
           },
           publish: {
-            executor: '@guysenpai/nx-release:npm',
+            executor: '@ammi1378/nx-release:npm',
             options: expect.objectContaining({})
           }
         })
@@ -361,7 +361,7 @@ describe('install generator', () => {
         expect(lib1.targets).toEqual(
           expect.objectContaining({
             version: {
-              executor: '@guysenpai/nx-release:version',
+              executor: '@ammi1378/nx-release:version',
               options: expect.objectContaining({ changelogPreset: 'conventionalcommits' })
             }
           })
@@ -378,7 +378,7 @@ describe('install generator', () => {
         expect(lib1.targets).toEqual(
           expect.objectContaining({
             version: {
-              executor: '@guysenpai/nx-release:version',
+              executor: '@ammi1378/nx-release:version',
               options: expect.objectContaining({ changelogPreset: 'angular' })
             }
           })

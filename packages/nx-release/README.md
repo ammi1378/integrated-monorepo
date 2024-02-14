@@ -1,4 +1,4 @@
-# @guysenpai/nx-release
+# @ammi1378/nx-release
 
 **Nx plugin for versioning** using [SemVer](https://semver.org/), **CHANGELOG generation** powered by [Conventional Commits](https://www.conventionalcommits.org/), **release and libraries publishing** on NPM, Github or Gitlab.
 
@@ -9,15 +9,15 @@
 Using Nx:
 
 ```sh
-npm install -D @guysenpai/nx-release
-nx g @guysenpai/nx-release:install # independent versioning
-nx g @guysenpai/nx-release:install --syncVersions # synced versioning
+npm install -D @ammi1378/nx-release
+nx g @ammi1378/nx-release:install # independent versioning
+nx g @ammi1378/nx-release:install --syncVersions # synced versioning
 ```
 
 Using Angular CLI:
 
 ```sh
-ng add @guysenpai/nx-release
+ng add @ammi1378/nx-release
 ```
 
 This package allows you to manage your Nx workspace using of two modes: **Synced** or **Independent**.
@@ -102,7 +102,7 @@ You can customize the default configuration using the definition file (`angular.
 
 ```json
 {
-  "executor": "@guysenpai/nx-release:version",
+  "executor": "@ammi1378/nx-release:version",
   "options": {
     "baseBranch": "master",
     "changelogPreset": "conventionalcommits",
@@ -117,7 +117,7 @@ The preset is highly configurable, following the [conventional-changelog configu
 
 ```json
 {
-  "executor": "@guysenpai/nx-release:version",
+  "executor": "@ammi1378/nx-release:version",
   "options": {
     "preset": {
       "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",

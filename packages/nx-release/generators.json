@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "name": "@guysenpai/nx-release",
+  "name": "@ammi1378/nx-release",
   "version": "0.0.1",
   "generators": {
     "install": {
       "aliases": ["ng-add", "init"],
       "factory": "./src/generators/install/generator",
       "schema": "./src/generators/install/schema.json",
-      "description": "Install @guysenpai/nx-release plugin to the workspace.",
+      "description": "Install @ammi1378/nx-release plugin to the workspace.",
       "hidden": true
     }
   },
@@ -16,7 +16,7 @@
       "aliases": ["install", "init"],
       "factory": "./src/generators/install/schematic",
       "schema": "./src/generators/install/schema.json",
-      "description": "Install @guysenpai/nx-release plugin to the workspace.",
+      "description": "Install @ammi1378/nx-release plugin to the workspace.",
       "hidden": true
     }
   }

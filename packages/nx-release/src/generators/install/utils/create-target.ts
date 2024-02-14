@@ -11,7 +11,7 @@ export function createVersionTarget(options: InstallGeneratorSchema): TargetConf
   const targetOptions = _createTargetOptions(options);
 
   return {
-    executor: '@guysenpai/nx-release:version',
+    executor: '@ammi1378/nx-release:version',
     ...(Object.keys(targetOptions).length > 0 ? { options: targetOptions } : {})
   };
 }
@@ -24,7 +24,7 @@ export function createVersionTarget(options: InstallGeneratorSchema): TargetConf
  */
 export function createReleaseTarget(options: InstallGeneratorSchema): TargetConfiguration {
   return {
-    executor: `@guysenpai/nx-release:${options.createRelease}`,
+    executor: `@ammi1378/nx-release:${options.createRelease}`,
     options: {
       tag: '${tag}',
       notes: '${notes}'
@@ -39,7 +39,7 @@ export function createReleaseTarget(options: InstallGeneratorSchema): TargetConf
  */
 export function createPublishTarget(production?: boolean): TargetConfiguration {
   return {
-    executor: '@guysenpai/nx-release:npm',
+    executor: '@ammi1378/nx-release:npm',
     options: {
       access: 'public',
       targetBuild: production ? 'build:production' : 'build',

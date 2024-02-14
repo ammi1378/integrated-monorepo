@@ -65,7 +65,7 @@ export default async function version(
       event: 'failure',
       level: 'error',
       message: `Failed to determine dependencies.
-      Please report an issue: https://github.com/guysenpai/integrated-monorepo`,
+      Please report an issue: https://github.com/ammi1378/integrated-monorepo`,
       projectName
     });
     return { success: false };

@@ -3,7 +3,7 @@
   "cli": "nx",
   "$id": "NxReleaseInstall",
   "title": "Nx Release Install",
-  "description": "Initialize the @guysenpai/nx-release plugin.",
+  "description": "Initialize the @ammi1378/nx-release plugin.",
   "type": "object",
   "properties": {
     "syncVersions": {

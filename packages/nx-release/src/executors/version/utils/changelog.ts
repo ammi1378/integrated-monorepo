@@ -20,7 +20,7 @@ import type { Version } from './version';
 
 export const defaultHeader = `# Changelog
 
-This file was generated with [@guysenpai/semver](https://github.com/guysenpai/semver).`;
+This file was generated with [@ammi1378/semver](https://github.com/ammi1378/semver).`;
 
 /**
  * Get changelog path
