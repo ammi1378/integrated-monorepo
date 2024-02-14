@@ -22,7 +22,6 @@ export default async function runExecutor({
   latest,
   assets
 }: GithubExecutorSchema): Promise<{ success: boolean }> {
-  console.log('hi')
   const createRelease$ = exec('gh', [
     'release',
     'create',
