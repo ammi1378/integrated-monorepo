@@ -9,6 +9,7 @@ import type { InstallGeneratorSchema } from './schema';
 import { updatePostTargets } from './utils/update-post-targets';
 
 export default async function install(tree: Tree, options: InstallGeneratorSchema): Promise<() => void> {
+  console.log('hi')
   // Synced versioning
   if (options.syncVersions) {
     addProjectConfiguration(tree, 'workspace', {
