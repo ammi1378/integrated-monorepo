@@ -11,6 +11,7 @@ import { updatePostTargets } from './utils/update-post-targets';
 export default async function install(tree: Tree, options: InstallGeneratorSchema): Promise<() => void> {
   // Synced versioning
   console.log('hi')
+  console.log('hi')
   if (options.syncVersions) {
     addProjectConfiguration(tree, 'workspace', {
       root: '.',
