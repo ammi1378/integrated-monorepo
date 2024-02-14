@@ -21,8 +21,8 @@ jobs:
 
       - name: Version
         run: |
-          pnpm exec nx affected -t build --base=latest
-          pnpm exec nx affected -t version --base=latest
+          pnpm exec nx affected -t build --base=master --head=HEAD
+          pnpm exec nx affected -t version --base=master --head=HEAD
         shell: bash
 
       - name: Tag latest
